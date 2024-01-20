@@ -1,11 +1,15 @@
-# keycloak
+# Spring Security OAuth2 Keycloak Demo
 
-Download Standalone Keycloak zip instead of container image
+This repository contains source code to demonstrate OAuth2 features using Spring Security and KeyCloak Authorization Server
 
-![image](https://github.com/ashu-89/keycloak/assets/44347137/32a4f9b8-2078-4c8b-8e1b-dde06caab024)
+After you checked out the project, run the following command:
 
-From bin folder, execut the following command to start keycloak on a port other than default 8080.
-\kc.bat start-dev --http-port=8180
-Don't know why GitHub tries to be oversmart and display's above command incorrectly till we don't enter edit mode.
-the command is:
-"kc.bat start-dev --http-port=8180" .. no quotes obvio, but Github makes doube hyphens as single hyphen, lol.
+`mvn clean verify`
+
+NOTE: This branch contains initial source code for the demo project, you can find the final source code in the main branch
+
+This project contains examples for 3 OAuth2 Grant Types
+
+- Authorization Code Flow (oauth2-authorization-code-demo)
+- PKCE Authorization Code Flow (oauth2-pkce-demo)
+- Client Credentials Flow (oauth2-client-credentials-demo)
