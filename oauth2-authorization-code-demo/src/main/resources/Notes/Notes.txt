@@ -1,0 +1,23 @@
+1) We downloaded keycloak zip
+2) from bin took this command:
+    kc.bat start-dev --http-port=8180
+    to start keycloak on non default 8080 port - 8080 for spring boot microservice.
+
+3) Created a new realm and a client in new realm and a user in new realm
+
+4) Added a controller to return a basic html page
+
+5) Added Oauth2Client in pom - now when we start server, because we haven't yet added
+oauth config .. it keeps giving bad creds in UI and also server starts with a message like this:
+Using generated security password: d15f4d51-23fb-4a70-9bab-01833141d690
+
+6) will try to remove from pom oauth 2 client .. hoping we directly go to html
+>> Yes, commenting  the spring-boot-starter-oauth2-client in pom indeed took us directly to UI.
+    <!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-oauth2-client -->
+      <!--  <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-oauth2-client</artifactId>
+            <version>3.2.2</version>
+        </dependency>-->
+
+7) Will now add both pom and config for oauth2 client in tandem and see.
