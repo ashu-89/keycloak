@@ -13,3 +13,19 @@ This project contains examples for 3 OAuth2 Grant Types
 - Authorization Code Flow (oauth2-authorization-code-demo)
 - PKCE Authorization Code Flow (oauth2-pkce-demo)
 - Client Credentials Flow (oauth2-client-credentials-demo)
+
+###########################################################################
+
+Creating a client in KeyCloak
+
+Spring boot format - valid redirect URI
+
+/login/oauth2/code/{registrationId}
+
+
+clientId - ashu-1
+Therefore, valid redirect URI
+/login/oauth2/code/ashu-1
+
+Full valid redirect URI - http://localhost:8080/login/oauth2/code/ashu-1
+#####
