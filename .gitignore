@@ -1,36 +1,38 @@
-HELP.md
+# Ignore IntelliJ IDEA files
+.idea/
+
+# Ignore Angular files
+node_modules/
+dist/
+*.log
+npm-debug.log*
+
+# Ignore TypeScript files
+*.tsbuildinfo
+*.js.map
+
+# Ignore Spring Boot files
 target/
-!.mvn/wrapper/maven-wrapper.jar
-!**/src/main/**/target/
-!**/src/test/**/target/
+*.jar
+*.war
+*.class
 
-### STS ###
-.apt_generated
-.classpath
-.factorypath
-.project
-.settings
-.springBeans
-.sts4-cache
+# Ignore Maven files
+.mvn/
+target/
 
-### IntelliJ IDEA ###
-.idea
-*.iws
-*.iml
-*.ipr
-
-### NetBeans ###
-/nbproject/private/
-/nbbuild/
-/dist/
-/nbdist/
-/.nb-gradle/
+# Ignore Gradle files
+.gradle/
 build/
-!**/src/main/**/build/
-!**/src/test/**/build/
 
-### VS Code ###
-.vscode/
+# Ignore Eclipse files
+.classpath
+.project
+.settings/
+bin/
 
-### Node Modules ###
-!**/src/main/resources/frontend/node_modules
+# Ignore miscellaneous files
+*.log
+*.swp
+*~
+.DS_Store
