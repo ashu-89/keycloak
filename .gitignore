@@ -1,0 +1,38 @@
+# Ignore IntelliJ IDEA files
+.idea/
+
+# Ignore Angular files
+node_modules/
+dist/
+*.log
+npm-debug.log*
+
+# Ignore TypeScript files
+*.tsbuildinfo
+*.js.map
+
+# Ignore Spring Boot files
+target/
+*.jar
+*.war
+*.class
+
+# Ignore Maven files
+.mvn/
+target/
+
+# Ignore Gradle files
+.gradle/
+build/
+
+# Ignore Eclipse files
+.classpath
+.project
+.settings/
+bin/
+
+# Ignore miscellaneous files
+*.log
+*.swp
+*~
+.DS_Store
